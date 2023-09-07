@@ -18,11 +18,14 @@
    list-style: none;
  }
  .navbar {
+   position: sticky;
+   top: 0;
    background-color: black;
    display: flex;
    justify-content: space-between;
    align-items: center;
    color: white;
+
  }
  .pages {
    display: flex;
@@ -31,4 +34,22 @@
    margin: 30px;
    margin-left: auto;
    font-size: 25px;
+ }
+
+.pages a:after{
+   content: '';
+   margin: right;
+   display: block;
+   height: 4px;
+   width: 0%;
+   background-color: purple;
+   /* transition: width 0.5s ease,background-color 0.5s ease; */
+   transition: all 0.5s ease;
+ }
+ .pages a:hover:after{
+   width: 100%;
+   background-color: purple;
+ }
+ .about {
+   height: 800px;
  }
