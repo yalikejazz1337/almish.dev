@@ -25,13 +25,14 @@ li {
   list-style: none;
 }
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgb(255, 255, 255);
   z-index: 10;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 .pages {
   display: flex;
